@@ -55,7 +55,7 @@ a { text-decoration: none; color: inherit; }
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     z-index: 1000;
     transition: all 0.5s var(--ease);
     background: transparent;
@@ -108,13 +108,13 @@ a { text-decoration: none; color: inherit; }
 }
 
 .nav-logo img {
-    height: 90px;
+    height: 220px;
     width: auto;
     transition: all 0.4s var(--ease);
 }
 
 .navegacion.scrolled .nav-logo img {
-    height: 60px;
+    height: 160px;
 }
 
 .nav-links {
