@@ -1271,6 +1271,265 @@ a { text-decoration: none; color: inherit; }
 .whatsapp-float svg { width: 26px; height: 26px; }
 
 /* ==========================================
+   REFUGIO PASTORAL
+   ========================================== */
+
+/* Nav fija para páginas internas */
+.navegacion.scrolled-always {
+    background: rgba(250, 248, 244, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 12px 0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+}
+
+.navegacion.scrolled-always .nav-logo img { height: 60px; }
+.navegacion.scrolled-always .nav-links a { color: var(--gris); }
+.navegacion.scrolled-always .nav-links a:hover { color: var(--verde); }
+.navegacion.scrolled-always .menu-toggle span { background: var(--verde-oscuro); }
+.navegacion.scrolled-always .nav-social a { color: rgba(0,0,0,0.3); }
+.navegacion.scrolled-always .nav-social a:hover { color: var(--verde); }
+
+.nav-activo {
+    color: var(--verde) !important;
+    font-weight: 600 !important;
+}
+
+/* Hero refugio */
+.refugio-hero {
+    height: 75vh;
+    min-height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--blanco);
+    background: url('img/terraza.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+/* Para quién */
+.refugio-para-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+.refugio-para-item {
+    text-align: center;
+    padding: 35px 25px;
+    border-radius: var(--radius-grande);
+    background: var(--blanco);
+    border: 1px solid rgba(0,0,0,0.04);
+    transition: all 0.4s var(--ease);
+}
+
+.refugio-para-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sombra-hover);
+}
+
+.refugio-para-icono {
+    width: 55px;
+    height: 55px;
+    background: var(--verde-palido);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    color: var(--verde);
+    transition: all 0.3s var(--ease);
+}
+
+.refugio-para-item:hover .refugio-para-icono {
+    background: var(--verde);
+    color: var(--blanco);
+}
+
+.refugio-para-icono svg { width: 24px; height: 24px; }
+
+.refugio-para-item h4 {
+    font-size: 1.2rem;
+    color: var(--verde-oscuro);
+    margin-bottom: 8px;
+}
+
+.refugio-para-item p {
+    font-size: 0.9rem;
+    color: var(--gris);
+    font-weight: 300;
+}
+
+/* Servicios */
+.refugio-servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.refugio-servicio {
+    background: var(--blanco);
+    border-radius: var(--radius-grande);
+    padding: 40px 35px;
+    border: 1px solid rgba(0,0,0,0.04);
+    transition: all 0.4s var(--ease);
+}
+
+.refugio-servicio:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--sombra-hover);
+}
+
+.refugio-servicio-ancho {
+    grid-column: span 2;
+}
+
+.refugio-servicio-icono {
+    width: 48px;
+    height: 48px;
+    color: var(--tierra);
+    margin-bottom: 18px;
+}
+
+.refugio-servicio-icono svg { width: 100%; height: 100%; }
+
+.refugio-servicio h3 {
+    font-size: 1.5rem;
+    color: var(--verde-oscuro);
+    margin-bottom: 15px;
+}
+
+.refugio-servicio ul {
+    list-style: none;
+}
+
+.refugio-servicio ul li {
+    font-size: 0.92rem;
+    color: var(--gris);
+    font-weight: 300;
+    padding: 6px 0;
+    padding-left: 18px;
+    position: relative;
+}
+
+.refugio-servicio ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 6px;
+    height: 6px;
+    background: var(--tierra);
+    border-radius: 50%;
+}
+
+/* Pasos */
+.refugio-pasos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+.refugio-paso {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.refugio-paso-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--tierra);
+    opacity: 0.4;
+    margin-bottom: 12px;
+    line-height: 1;
+}
+
+.refugio-paso h4 {
+    font-size: 1.15rem;
+    color: var(--verde-oscuro);
+    margin-bottom: 10px;
+}
+
+.refugio-paso p {
+    font-size: 0.88rem;
+    color: var(--gris);
+    font-weight: 300;
+}
+
+/* Respaldo */
+.refugio-respaldo {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.refugio-respaldo-texto h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: var(--verde-oscuro);
+    margin-bottom: 20px;
+}
+
+.refugio-respaldo-texto p {
+    font-size: 1rem;
+    color: var(--gris);
+    font-weight: 300;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.refugio-respaldo-texto strong {
+    color: var(--verde);
+    font-weight: 600;
+}
+
+/* CTA */
+.refugio-cta {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.refugio-cta h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    color: var(--blanco);
+    margin-bottom: 15px;
+}
+
+.refugio-cta p {
+    color: rgba(255,255,255,0.6);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.refugio-contacto-datos {
+    margin-top: 35px;
+    color: rgba(255,255,255,0.4);
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+.refugio-contacto-datos p {
+    margin-bottom: 4px;
+    color: rgba(255,255,255,0.4);
+}
+
+/* Responsive refugio */
+@media (max-width: 768px) {
+    .refugio-hero { background-attachment: scroll; height: 60vh; }
+    .refugio-para-grid { grid-template-columns: 1fr 1fr; }
+    .refugio-servicios-grid { grid-template-columns: 1fr; }
+    .refugio-servicio-ancho { grid-column: span 1; }
+    .refugio-pasos-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+    .refugio-para-grid { grid-template-columns: 1fr; }
+    .refugio-pasos-grid { grid-template-columns: 1fr; }
+}
+
+/* ==========================================
    ANIMACIONES SCROLL
    ========================================== */
 .animate-on-scroll {
