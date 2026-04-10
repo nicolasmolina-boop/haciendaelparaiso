@@ -102,14 +102,21 @@ a { text-decoration: none; color: inherit; }
 }
 
 .nav-logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--blanco);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    line-height: 1.2;
-    transition: color 0.4s var(--ease);
+    display: flex;
+    align-items: center;
+    transition: all 0.4s var(--ease);
+}
+
+.nav-logo img {
+    height: 55px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    transition: all 0.4s var(--ease);
+}
+
+.navegacion.scrolled .nav-logo img {
+    height: 45px;
+    filter: none;
 }
 
 .nav-links {
@@ -1146,11 +1153,11 @@ a { text-decoration: none; color: inherit; }
     margin-bottom: 50px;
 }
 
-.footer-marca-titulo {
-    font-size: 1.6rem;
-    color: var(--blanco);
-    margin-bottom: 12px;
-    letter-spacing: -0.3px;
+.footer-logo {
+    height: 80px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    margin-bottom: 15px;
 }
 
 .footer-marca p {
