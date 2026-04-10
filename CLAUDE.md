@@ -33,9 +33,13 @@ Es un sitio **HTML puro** (HTML + CSS + JS), sin frameworks, sin bundlers, sin n
 4. **Productos** — Lechugas, hierbas aromáticas, hortalizas (cards con overlay hover)
 5. **Galería** — 8 fotos reales de la hacienda con lightbox
 6. **Turismo** — Tours guiados, degustaciones, talleres educativos, retiros rurales
-7. **Pedidos** — 3 planes (Semanal L.350, Premium L.750, Empresarial cotización) con links a WhatsApp
-8. **Contacto** — Formulario que redirige a WhatsApp + mapa + info de contacto
-9. **Footer** — Navegación, legal, redes sociales, copyright
+7. **Refugio Pastoral** — (pendiente crear) Programa de restauración para pastores, líderes y familias
+8. **Pedidos** — 3 planes (Semanal L.350, Premium L.750, Empresarial cotización) con links a WhatsApp
+9. **Contacto** — Formulario que redirige a WhatsApp + mapa + info de contacto
+10. **Footer** — Navegación, legal, redes sociales, copyright
+
+### Página dedicada: refugio-pastoral.html (pendiente crear)
+Página separada para el programa de restauración pastoral. Ver `contenido-refugio-pastoral.md` para el contenido completo.
 
 ## Identidad de marca
 
@@ -96,6 +100,39 @@ Es un sitio **HTML puro** (HTML + CSS + JS), sin frameworks, sin bundlers, sin n
 - **Facebook:** (pendiente confirmar URL)
 - **WhatsApp:** https://wa.me/50497655779
 
+## Refugio Pastoral
+
+Programa de restauración integral para pastores, líderes ministeriales y sus familias. Es una línea de servicio clave de la hacienda, separada del negocio agrícola.
+
+### Público objetivo
+- Pastores y líderes con desgaste emocional/espiritual (burnout)
+- Matrimonios pastorales que necesitan reconexión
+- Congregaciones para retiros y bautizos
+- Familias de líderes ministeriales
+
+### Servicios
+- **Salud física:** Análisis clínicos, medicina tradicional, homeopatía, alimentación saludable con productos de la hacienda
+- **Salud emocional:** Psicólogos profesionales, acompañamiento para burnout pastoral, manejo de estrés
+- **Restauración matrimonial:** Terapia de pareja, consejería sexológica, espacios de reconexión
+- **Experiencia espiritual:** Retiros a la medida, bautizos, oración en la montaña, caminatas, fogatas
+- **Hospedaje:** Habitaciones en la hacienda (capacidad en crecimiento), coordinación con hospedajes en Valle de Ángeles
+
+### Respaldo espiritual
+- Cobertura del **Bridge Network** (bridgenetwork.cc), red apostólica del Apóstol Julio Sotero
+- Nicolás Molina sirve activamente en el ministerio pastoral
+
+### Tono de la comunicación
+- Cálido, profesional, respetuoso — NO venta agresiva
+- Cristiano general — NO denominacional
+- Enfatizar confidencialidad siempre
+- Mensaje WhatsApp: `wa.me/50497655779?text=Hola Nicolás, soy pastor/líder y me interesa conocer el Refugio Pastoral de Hacienda El Paraíso`
+
+### Implementación pendiente
+1. Crear sección breve en index.html (reemplaza/expande Turismo)
+2. Crear página dedicada refugio-pastoral.html
+3. Agregar "Refugio Pastoral" al menú de navegación
+4. Usar fotos de montañas, naturaleza y espacios de la hacienda
+
 ## Reglas para Claude Code
 
 ### SÍ hacer
@@ -147,16 +184,23 @@ El sitio se publica automáticamente con **GitHub Pages** desde la rama `main`. 
 
 ## Tareas pendientes
 
-1. Actualizar sección de pedidos con precios reales detallados (hierbas L.180/lb, lechugas desde L.35/lb)
-2. Actualizar links de redes sociales con URLs reales (Instagram y TikTok)
-3. Crear correo info@haciendaelparaiso.org en GoDaddy
-4. Confirmar URL de Facebook
-5. Optimizar imágenes a WebP para velocidad
-6. Registrar sitemap.xml en Google Search Console
-7. Instalar Google Analytics / Tag Manager
-8. Versión en inglés (cuando el sitio en español esté impecable)
+### Prioridad alta
+1. Crear sección Refugio Pastoral en index.html
+2. Crear página refugio-pastoral.html
+3. Actualizar sección de pedidos con precios detallados (hierbas L.180/lb, lechugas desde L.35/lb)
+4. Crear correo info@haciendaelparaiso.org en GoDaddy
+5. Confirmar URL de Facebook
+
+### Prioridad media
+6. Optimizar imágenes a WebP para velocidad
+7. Registrar sitemap.xml en Google Search Console
+8. Instalar Google Analytics / Tag Manager
 9. Sección de equipo con fotos reales
-10. Catálogo descargable en PDF
+
+### Futuro
+10. Versión en inglés
+11. Catálogo descargable en PDF
+12. Sistema de pedidos online (Google Sheets/backend)
 
 ---
 
