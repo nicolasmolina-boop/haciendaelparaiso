@@ -108,15 +108,13 @@ a { text-decoration: none; color: inherit; }
 }
 
 .nav-logo img {
-    height: 55px;
+    height: 60px;
     width: auto;
-    filter: brightness(0) invert(1);
     transition: all 0.4s var(--ease);
 }
 
 .navegacion.scrolled .nav-logo img {
-    height: 45px;
-    filter: none;
+    height: 48px;
 }
 
 .nav-links {
@@ -1154,9 +1152,8 @@ a { text-decoration: none; color: inherit; }
 }
 
 .footer-logo {
-    height: 80px;
+    height: 90px;
     width: auto;
-    filter: brightness(0) invert(1);
     margin-bottom: 15px;
 }
 
