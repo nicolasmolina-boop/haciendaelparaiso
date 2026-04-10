@@ -136,7 +136,39 @@ a { text-decoration: none; color: inherit; }
     color: var(--blanco);
 }
 
-/* Idioma toggle removido - se activará cuando esté lista la versión en inglés */
+.nav-social {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-social a {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.5);
+    transition: all 0.3s var(--ease);
+    border-radius: 8px;
+}
+
+.nav-social a:hover {
+    color: var(--blanco);
+}
+
+.navegacion.scrolled .nav-social a {
+    color: rgba(0,0,0,0.3);
+}
+
+.navegacion.scrolled .nav-social a:hover {
+    color: var(--verde);
+}
+
+.nav-social svg {
+    width: 16px;
+    height: 16px;
+}
 
 .menu-toggle {
     display: none;
@@ -1284,7 +1316,7 @@ a { text-decoration: none; color: inherit; }
     }
 
     .nav-links.activo { display: flex; }
-    .nav-idioma { display: none; }
+    .nav-social { display: none; }
 
     .hero { background-attachment: scroll; }
     .seccion { padding: 80px 20px; }
