@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function goToSlide(index) {
+        if (!slides || slides.length === 0) return;
         slides[currentSlide].classList.remove('activo');
         dotsContainer.children[currentSlide].classList.remove('activo');
         currentSlide = index;
