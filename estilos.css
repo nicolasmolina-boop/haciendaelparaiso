@@ -136,29 +136,7 @@ a { text-decoration: none; color: inherit; }
     color: var(--blanco);
 }
 
-.nav-idioma {
-    display: flex;
-    gap: 4px;
-}
-
-.btn-idioma {
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.25);
-    color: rgba(255,255,255,0.5);
-    padding: 5px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: all 0.3s var(--ease);
-}
-
-.btn-idioma.activo {
-    background: var(--blanco);
-    border-color: var(--blanco);
-    color: var(--verde-oscuro);
-}
+/* Idioma toggle removido - se activará cuando esté lista la versión en inglés */
 
 .menu-toggle {
     display: none;
@@ -1009,6 +987,19 @@ a { text-decoration: none; color: inherit; }
     height: 6px;
     background: var(--tierra);
     border-radius: 50%;
+}
+
+.pedido-precio {
+    color: var(--tierra);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    font-weight: 300;
+}
+
+.pedido-precio strong {
+    font-size: 1.6rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
 }
 
 .boton-pedido { width: 100%; text-align: center; }
