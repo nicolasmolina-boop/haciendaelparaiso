@@ -4,19 +4,13 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    // ==========================================
-    // NAVEGACION - Scroll y menu hamburguesa
-    // ==========================================
-    const nav = document.getElementById('nav');
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
+    // NAVEGACION
+    var nav = document.getElementById('nav');
+    var menuToggle = document.getElementById('menuToggle');
+    var navLinks = document.getElementById('navLinks');
 
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            nav.classList.add('scrolled');
-        } else {
-            nav.classList.remove('scrolled');
-        }
+        nav.classList.toggle('scrolled', window.scrollY > 50);
     });
 
     menuToggle.addEventListener('click', function() {
@@ -24,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('activo');
     });
 
-    // Cerrar menu al hacer clic en un enlace
     navLinks.querySelectorAll('a').forEach(function(link) {
         link.addEventListener('click', function() {
             menuToggle.classList.remove('activo');
@@ -32,81 +25,57 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ==========================================
     // CONTADORES ANIMADOS
-    // ==========================================
-    function animarContadores() {
-        var contadores = document.querySelectorAll('.stat-numero');
-        contadores.forEach(function(contador) {
-            var target = parseInt(contador.getAttribute('data-target'));
-            var current = 0;
-            var increment = target / 60;
-            var duration = 2000;
-            var stepTime = duration / 60;
-
-            function updateCounter() {
-                current += increment;
-                if (current < target) {
-                    contador.textContent = Math.floor(current);
-                    setTimeout(updateCounter, stepTime);
-                } else {
-                    contador.textContent = target;
-                }
-            }
-
-            updateCounter();
-        });
-    }
-
-    // Observer para contadores
-    var statsSection = document.querySelector('.estadisticas');
     var statsAnimated = false;
-
     var statsObserver = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
             if (entry.isIntersecting && !statsAnimated) {
                 statsAnimated = true;
-                animarContadores();
+                document.querySelectorAll('.stat-numero').forEach(function(el) {
+                    var target = parseInt(el.getAttribute('data-target'));
+                    var current = 0;
+                    var increment = target / 60;
+                    var timer = setInterval(function() {
+                        current += increment;
+                        if (current >= target) {
+                            el.textContent = target;
+                            clearInterval(timer);
+                        } else {
+                            el.textContent = Math.floor(current);
+                        }
+                    }, 33);
+                });
             }
         });
     }, { threshold: 0.5 });
 
-    if (statsSection) {
-        statsObserver.observe(statsSection);
-    }
+    var statsSection = document.querySelector('.estadisticas');
+    if (statsSection) statsObserver.observe(statsSection);
 
-    // ==========================================
     // ANIMACIONES AL SCROLL
-    // ==========================================
-    var animatedElements = document.querySelectorAll('.animate-on-scroll');
-
     var scrollObserver = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
+                scrollObserver.unobserve(entry.target);
             }
         });
     }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-    animatedElements.forEach(function(el) {
+    document.querySelectorAll('.animate-on-scroll').forEach(function(el) {
         scrollObserver.observe(el);
     });
 
-    // ==========================================
-    // CARRUSEL DE TESTIMONIOS
-    // ==========================================
+    // CARRUSEL TESTIMONIOS
     var slides = document.querySelectorAll('.testimonio-slide');
     var dotsContainer = document.getElementById('testimoniosDots');
     var currentSlide = 0;
 
-    // Crear dots
-    slides.forEach(function(_, index) {
+    slides.forEach(function(_, i) {
         var dot = document.createElement('span');
         dot.classList.add('dot');
-        if (index === 0) dot.classList.add('activo');
-        dot.addEventListener('click', function() {
-            goToSlide(index);
-        });
+        if (i === 0) dot.classList.add('activo');
+        dot.addEventListener('click', function() { goToSlide(i); });
         dotsContainer.appendChild(dot);
     });
 
@@ -118,97 +87,84 @@ document.addEventListener('DOMContentLoaded', function() {
         dotsContainer.children[currentSlide].classList.add('activo');
     }
 
-    // Auto-rotacion cada 5 segundos
     setInterval(function() {
-        var next = (currentSlide + 1) % slides.length;
-        goToSlide(next);
+        goToSlide((currentSlide + 1) % slides.length);
     }, 5000);
 
-    // ==========================================
-    // LIGHTBOX (GALERIA)
-    // ==========================================
+    // LIGHTBOX
     var lightbox = document.getElementById('lightbox');
     var lightboxImg = document.getElementById('lightboxImg');
     var lightboxCaption = document.getElementById('lightboxCaption');
-    var lightboxCerrar = document.getElementById('lightboxCerrar');
-    var galeriaItems = document.querySelectorAll('.galeria-item');
 
-    galeriaItems.forEach(function(item) {
+    document.querySelectorAll('.galeria-item').forEach(function(item) {
         item.addEventListener('click', function() {
-            var caption = item.getAttribute('data-caption');
-            lightboxCaption.textContent = caption || '';
-            lightbox.classList.add('activo');
+            var img = item.querySelector('img');
+            var caption = item.querySelector('.galeria-overlay span');
+            if (img) {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightboxCaption.textContent = caption ? caption.textContent : '';
+                lightbox.classList.add('activo');
+            }
         });
     });
 
-    lightboxCerrar.addEventListener('click', function() {
+    document.getElementById('lightboxCerrar').addEventListener('click', function() {
         lightbox.classList.remove('activo');
     });
 
     lightbox.addEventListener('click', function(e) {
-        if (e.target === lightbox) {
-            lightbox.classList.remove('activo');
-        }
+        if (e.target === lightbox) lightbox.classList.remove('activo');
     });
 
-    // ==========================================
-    // FORMULARIO DE CONTACTO -> WHATSAPP
-    // ==========================================
-    var contactoForm = document.getElementById('contactoForm');
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') lightbox.classList.remove('activo');
+    });
 
-    contactoForm.addEventListener('submit', function(e) {
+    // FORMULARIO -> WHATSAPP
+    document.getElementById('contactoForm').addEventListener('submit', function(e) {
         e.preventDefault();
-
         var nombre = document.getElementById('nombre').value;
         var email = document.getElementById('email').value;
         var asunto = document.getElementById('asunto').value;
         var mensaje = document.getElementById('mensaje').value;
 
-        var texto = 'Hola Hacienda El Paraiso!%0A%0A' +
-            'Nombre: ' + nombre + '%0A' +
-            'Email: ' + email + '%0A' +
-            'Asunto: ' + asunto + '%0A' +
-            'Mensaje: ' + mensaje;
+        var texto = encodeURIComponent(
+            'Hola Hacienda El Paraiso!\n\n' +
+            'Nombre: ' + nombre + '\n' +
+            'Email: ' + email + '\n' +
+            'Asunto: ' + asunto + '\n' +
+            'Mensaje: ' + mensaje
+        );
 
         window.open('https://wa.me/50497655779?text=' + texto, '_blank');
     });
 
-    // ==========================================
     // MULTI-IDIOMA
-    // ==========================================
     var currentLang = 'es';
-    var botonesIdioma = document.querySelectorAll('.btn-idioma');
-
-    botonesIdioma.forEach(function(btn) {
+    document.querySelectorAll('.btn-idioma').forEach(function(btn) {
         btn.addEventListener('click', function() {
             var lang = btn.getAttribute('data-lang');
             if (lang === currentLang) return;
-
             currentLang = lang;
 
-            // Actualizar botones
-            botonesIdioma.forEach(function(b) { b.classList.remove('activo'); });
+            document.querySelectorAll('.btn-idioma').forEach(function(b) {
+                b.classList.remove('activo');
+            });
             btn.classList.add('activo');
 
-            // Cambiar textos
-            var elements = document.querySelectorAll('[data-' + lang + ']');
-            elements.forEach(function(el) {
+            document.querySelectorAll('[data-' + lang + ']').forEach(function(el) {
                 var texto = el.getAttribute('data-' + lang);
-                if (texto) {
-                    el.textContent = texto;
-                }
+                if (texto) el.textContent = texto;
             });
         });
     });
 
-    // ==========================================
-    // SMOOTH SCROLL para links internos
-    // ==========================================
+    // SMOOTH SCROLL
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
         anchor.addEventListener('click', function(e) {
             var targetId = this.getAttribute('href');
             if (targetId === '#') return;
-
             var target = document.querySelector(targetId);
             if (target) {
                 e.preventDefault();
