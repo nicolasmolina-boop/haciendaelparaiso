@@ -1,0 +1,25 @@
+# Credenciales - NUNCA subir
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+.claude/
+
+# Carpetas temporales / obsoletas
+imagenes/
+
+# Backup de imágenes originales (antes de optimización)
+img/originales/
+
+# Script legacy de upload a GoDaddy (el sitio está en GitHub Pages)
+upload.sh
