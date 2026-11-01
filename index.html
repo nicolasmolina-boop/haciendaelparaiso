@@ -1,606 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacienda El Paraíso | Agricultura Premium en Honduras</title>
-    <meta name="description" content="Producción premium de lechugas hidropónicas, hierbas aromáticas y hortalizas frescas en Honduras. Tours rurales y experiencias agrícolas en Valle de Ángeles.">
-    <meta name="keywords" content="hacienda, agricultura, Honduras, hidropónico, lechugas, hortalizas, turismo rural, Valle de Ángeles">
-    <meta name="author" content="Hacienda El Paraíso">
-    <meta property="og:title" content="Hacienda El Paraíso — Donde la Tierra Cobra Vida">
-    <meta property="og:description" content="Producción premium de lechugas hidropónicas, hierbas aromáticas y hortalizas frescas en el corazón de Honduras.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://haciendaelparaiso.org">
-    <meta property="og:image" content="https://haciendaelparaiso.org/img/og-portada.jpg">
-    <meta property="og:locale" content="es_HN">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Hacienda El Paraíso — Donde la Tierra Cobra Vida">
-    <meta name="twitter:description" content="Producción premium de lechugas hidropónicas, hierbas aromáticas y hortalizas frescas en Honduras.">
-    <meta name="twitter:image" content="https://haciendaelparaiso.org/img/og-portada.jpg">
-    <link rel="canonical" href="https://haciendaelparaiso.org">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="preload" as="image" href="img/hero.webp" fetchpriority="high">
-    <link rel="stylesheet" href="estilos.css">
-
-    <!-- Schema.org - LocalBusiness / Farm para SEO local -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "@id": "https://haciendaelparaiso.org/#business",
-        "name": "Hacienda El Paraíso",
-        "alternateName": "Hacienda El Paraíso Honduras",
-        "description": "Producción premium de lechugas hidropónicas, hierbas aromáticas y hortalizas frescas en Valle de Ángeles, Honduras. Tours rurales, turismo agrícola y Refugio Pastoral.",
-        "url": "https://haciendaelparaiso.org",
-        "logo": "https://haciendaelparaiso.org/img/logo.png",
-        "image": "https://haciendaelparaiso.org/img/og-portada.jpg",
-        "telephone": "+50497655779",
-        "email": "info@haciendaelparaiso.org",
-        "priceRange": "L. 350 - L. 750",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Valle de Ángeles",
-            "addressRegion": "Francisco Morazán",
-            "addressCountry": "HN"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 14.10456,
-            "longitude": -87.01338
-        },
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "08:00",
-                "closes": "17:00"
-            }
-        ],
-        "sameAs": [
-            "https://www.instagram.com/haciendaelparaisohn/",
-            "https://www.tiktok.com/@haciendaelparaisohn",
-            "https://wa.me/50497655779"
-        ],
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Productos y Servicios",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Product",
-                        "name": "Plan Semanal",
-                        "description": "Canasta semanal con lechugas variadas, hierbas aromáticas y 2kg de hortalizas"
-                    },
-                    "price": "350",
-                    "priceCurrency": "HNL"
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Product",
-                        "name": "Plan Premium",
-                        "description": "5 lechugas premium, pack de hierbas frescas y 5kg de hortalizas selectas"
-                    },
-                    "price": "750",
-                    "priceCurrency": "HNL"
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Tours Guiados",
-                        "description": "Recorridos por el invernadero, cultivos e instalaciones"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Refugio Pastoral",
-                        "description": "Programa de restauración integral para pastores, líderes y sus familias"
-                    }
-                }
-            ]
-        }
-    }
-    </script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#183a32">
+  <title>Hacienda El Paraíso · Valle de Ángeles, Honduras</title>
+  <meta name="description" content="Hacienda entre pinos en Valle de Ángeles: hierbas y lechugas frescas para tu cocina, bodas al aire libre, refugio pastoral y el Cañón El Torno a 500 metros.">
+  <link rel="canonical" href="https://haciendaelparaiso.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hacienda El Paraíso">
+  <meta property="og:title" content="Hacienda El Paraíso · Valle de Ángeles, Honduras">
+  <meta property="og:description" content="Hacienda entre pinos en Valle de Ángeles: hierbas y lechugas frescas para tu cocina, bodas al aire libre, refugio pastoral y el Cañón El Torno a 500 metros.">
+  <meta property="og:url" content="https://haciendaelparaiso.org/">
+  <meta property="og:image" content="https://haciendaelparaiso.org/img/og-portada.jpg">
+  <meta property="og:locale" content="es_HN">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": [
+    "LocalBusiness",
+    "Farm"
+   ],
+   "@id": "https://haciendaelparaiso.org/#hacienda",
+   "name": "Hacienda El Paraíso",
+   "url": "https://haciendaelparaiso.org/",
+   "logo": "https://haciendaelparaiso.org/img/logo.png",
+   "image": "https://haciendaelparaiso.org/img/og-portada.jpg",
+   "description": "Hacienda entre pinos en Valle de Ángeles: hierbas y lechugas frescas para restaurantes, bodas y celebraciones, refugio pastoral y acceso al Cañón El Torno.",
+   "telephone": "+504 9765-5779",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Valle de Ángeles",
+    "addressRegion": "Francisco Morazán",
+    "addressCountry": "HN"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 14.10456,
+    "longitude": -87.01338
+   },
+   "hasMap": "https://www.google.com/maps?q=14.10456,-87.01338",
+   "sameAs": [
+    "https://www.instagram.com/haciendaelparaisohn/",
+    "https://www.tiktok.com/@haciendaelparaisohn"
+   ]
+  }
+ ]
+}
+  </script>
 </head>
+<body data-page="index">
+<a class="skip" href="#main">Ir al contenido</a>
+<header class="header">
+  <a class="brand" href="./" aria-label="Hacienda El Paraíso, inicio"><img src="img/emblema.webp" alt="" width="45" height="45"><span>HACIENDA <strong>EL PARAÍSO</strong></span></a>
+  <nav aria-label="Navegación principal"><a href="./" data-nav="inicio">La hacienda</a><a href="cosecha.html" data-nav="cosecha">Del campo a tu mesa</a><a href="experiencias.html" data-nav="experiencias">Ven a vivirla</a><a href="eventos.html" data-nav="eventos">Celebra aquí</a><a href="el-torno.html" data-nav="el-torno">El Torno</a></nav>
+  <div class="nav-actions"><button class="bag" data-action="cart" aria-label="Abrir canasta">Canasta <span id="cart-count">0</span></button><button class="btn small" data-plan="Visita a la hacienda">Planea tu visita <span>↗</span></button><button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button></div>
+</header>
+<main id="main" tabindex="-1">
+<section data-page="inicio">
+  <div class="hero">
+    <img class="hero-img" src="img/hero.webp" width="1200" height="900" alt="Cultivos verdes entre pinos y montañas de Hacienda El Paraíso" fetchpriority="high">
+    <div class="hero-shade"></div>
+    <div class="hero-content"><p class="eyebrow light"><span class="dot"></span> VALLE DE ÁNGELES · HONDURAS</p><h1>La naturaleza<br>se vive.<br><em>Y se saborea.</em></h1><p class="hero-copy">De nuestras manos a tu mesa.<br>De la montaña a tus mejores recuerdos.</p><div class="hero-buttons"><a class="btn" href="experiencias.html">Descubre tu próxima escapada <span>↗</span></a><a class="text-link light" href="cosecha.html">Explora la cosecha <span>→</span></a></div></div>
+    <button class="photo-peek" data-gallery="1"><img src="img/historia.webp" alt="Jardín de la hacienda"><span>UN VISTAZO AL PARAÍSO<br><strong>Entra. Respira. Descubre. ↗</strong></span></button>
+    <div class="hero-bottom"><span>TIERRA QUE ALIMENTA. NATURALEZA QUE CONECTA.</span><a href="#dos-caminos">Sigue explorando ↓</a></div>
+  </div>
+  <div class="values-strip"><span>✳ Cultivado en nuestra hacienda</span><span>↟ Entre pinos y montañas</span><span>☀ Energía del sol</span><span>♡ Hecho en Honduras</span></div>
+  <section class="section intro" id="dos-caminos"><div><p class="eyebrow">UN LUGAR. MUCHAS FORMAS DE DISFRUTARLO.</p><h2>Un poco de Paraíso.<br><em>A tu manera.</em></h2></div><p>Somos una hacienda que cultiva alimentos y momentos. Ven por lo fresco, quédate por la calma y vuelve por todo lo que aquí se siente.</p></section>
+  <div class="path-grid section-pad">
+    <a class="path-card" href="cosecha.html"><img src="img/producto-hierbas.webp" alt="Cosecha fresca en el invernadero" loading="lazy"><div><span class="eyebrow light">01 / SABOREA</span><h3>Lo bueno empieza<br>en la tierra.</h3><p>Hierbas, hojas y frescura para tu cocina.</p><span class="card-link">Conoce nuestra cosecha <b>↗</b></span></div></a>
+    <a class="path-card" href="experiencias.html"><img src="img/historia.webp" alt="Jardines de la hacienda con vista a las montañas" loading="lazy"><div><span class="eyebrow light">02 / VIVE</span><h3>Tu pausa tiene<br>un lugar.</h3><p>Naturaleza, encuentros y tiempo para ti.</p><span class="card-link">Encuentra tu experiencia <b>↗</b></span></div></a>
+  </div>
+  <section class="section harvest-preview"><div class="section-top"><div><p class="eyebrow">DE NUESTRA TIERRA</p><h2>El sabor de lo <em>fresco.</em></h2></div><a class="text-link" href="cosecha.html">Toda la cosecha <span>↗</span></a></div><div class="preview-products" id="home-products"></div></section>
+  <section class="experience-banner"><img src="img/turismo.webp" alt="Terraza cubierta de Hacienda El Paraíso" loading="lazy"><div><p class="eyebrow light">CAMBIA EL RITMO</p><h2>Menos prisa.<br><em>Más vida.</em></h2><p>Una visita al campo, un encuentro especial o un espacio para descansar. Tú eliges cómo vivir la hacienda.</p><button class="btn" data-plan="Visita a la hacienda">Diseña tu día en la hacienda <span>↗</span></button></div></section>
+  <section class="section roots"><div><p class="eyebrow">NUESTRAS RAÍCES</p><h2>Cultivamos con las manos.<br><em>Recibimos con el corazón.</em></h2><p>En Valle de Ángeles, entre pinos y a más de 1.000 metros, la agricultura y la vida en la montaña se encuentran. Cuidamos nuestros cultivos, aprovechamos la energía solar y compartimos este lugar con quienes buscan volver a lo esencial.</p><a href="experiencias.html" class="text-link">Conoce la vida en la hacienda ↗</a></div><button data-gallery="4" class="root-photo"><img src="img/producto-hortalizas.webp" alt="Trabajo de cosecha manual en la hacienda" loading="lazy"><span>Así se cultiva el Paraíso ↗</span></button></section>
 
-<body>
-
-    <!-- NAVEGACIÓN -->
-    <nav aria-label="Principal" class="navegacion" id="nav">
-        <div class="nav-contenido">
-            <a href="./" class="nav-logo" aria-label="Hacienda El Paraíso — inicio"><img src="img/emblema.webp" alt="" width="48" height="48"><span class="nav-marca">Hacienda El Paraíso</span></a>
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#historia">Historia</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#turismo">Turismo</a></li>
-                <li><a href="refugio-pastoral.html">Refugio Pastoral</a></li>
-                <li><a href="#blog">Noticias</a></li>
-                <li><a href="#pedidos">Pedidos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <div class="nav-social">
-                <a href="https://www.instagram.com/haciendaelparaisohn/" aria-label="Instagram" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
-                <a href="https://www.tiktok.com/@haciendaelparaisohn" aria-label="TikTok" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 005.58 2.18v-3.26z"/></svg></a>
-            </div>
-        </div>
-    </nav>
-
-    <main id="contenido">
-
-    <!-- HERO -->
-    <section class="hero" id="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-contenido">
-            <p class="hero-etiqueta animate-fade-up">Agricultura Premium desde Honduras</p>
-            <h1 class="animate-fade-up">Donde la Tierra Cobra Vida</h1>
-            <p class="hero-subtitulo animate-fade-up">Producción premium de lechugas, hierbas aromáticas y hortalizas frescas en el corazón de Honduras.</p>
-            <div class="hero-botones animate-fade-up">
-                <a href="#productos" class="boton-principal">Conoce Más</a>
-                <a href="#contacto" class="boton-secundario">Contáctanos</a>
-            </div>
-        </div>
-        <div class="hero-scroll">
-            <div class="scroll-indicador"></div>
-        </div>
-    </section>
-
-    <!-- ESTADÍSTICAS -->
-    <section class="estadisticas">
-        <div class="contenedor">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <span class="stat-numero" data-target="5">0</span><span class="stat-plus">+</span>
-                    <span class="stat-texto">Hectáreas de Cultivo</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-numero" data-target="12">0</span><span class="stat-plus">+</span>
-                    <span class="stat-texto">Variedades de Productos</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-numero" data-target="50">0</span><span class="stat-plus">+</span>
-                    <span class="stat-texto">Clientes Satisfechos</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-numero" data-target="365">0</span>
-                    <span class="stat-texto">Días de Frescura</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- HISTORIA -->
-    <section id="historia" class="seccion">
-        <div class="contenedor">
-            <div class="seccion-header">
-                <span class="seccion-etiqueta">Nuestra Historia</span>
-                <h2>Raíces que Nutren el Futuro</h2>
-            </div>
-            <div class="historia-grid">
-                <div class="historia-imagen animate-on-scroll">
-                    <img src="img/historia.webp" alt="Historia de Hacienda El Paraíso" loading="lazy" width="800" height="453">
-                </div>
-                <div class="historia-texto animate-on-scroll">
-                    <p>Hacienda El Paraíso es una finca agrícola hondureña dedicada a la producción de hortalizas frescas de alta calidad. Con más de <strong>12 variedades</strong> de productos y sistemas hidropónicos de última generación, nos hemos convertido en un referente de agricultura sostenible en la región.</p>
-                    <p>Operamos con pasión, disciplina y visión de largo plazo, creando empleo, nutriendo familias y construyendo un modelo agrícola sostenible con <strong>conciencia ambiental</strong> que trascienda fronteras.</p>
-                    <div class="historia-valores">
-                        <div class="valor-item">
-                            <div class="valor-icono">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                            </div>
-                            <div>
-                                <h4>Compromiso Ambiental</h4>
-                                <p>Prácticas agrícolas que respetan y protegen nuestro ecosistema.</p>
-                            </div>
-                        </div>
-                        <div class="valor-item">
-                            <div class="valor-icono">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                            </div>
-                            <div>
-                                <h4>Pasión por la Calidad</h4>
-                                <p>Cada cosecha refleja nuestro amor por la excelencia.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRODUCTOS -->
-    <section id="productos" class="seccion seccion-clara">
-        <div class="contenedor">
-            <div class="seccion-header">
-                <span class="seccion-etiqueta">Nuestros Productos</span>
-                <h2>Productos Premium del Campo</h2>
-                <p class="seccion-descripcion">Cultivamos con técnica y cuidado para llevar lo mejor del campo hondureño a tu mesa.</p>
-            </div>
-            <div class="productos-grid">
-                <div class="producto-card animate-on-scroll">
-                    <div class="producto-imagen">
-                        <img src="img/producto-lechugas.webp" alt="Lechugas Hidropónicas" loading="lazy" width="600" height="800">
-                        <div class="producto-overlay">
-                            <p>Romana, Iceberg, Butterhead y más. Cultivadas en agua pura sin pesticidas.</p>
-                            <a href="#pedidos" class="producto-link">Hacer pedido &#8594;</a>
-                        </div>
-                    </div>
-                    <div class="producto-info">
-                        <span class="producto-etiqueta">Hidropónico</span>
-                        <h3>Lechugas Frescas</h3>
-                    </div>
-                </div>
-                <div class="producto-card animate-on-scroll">
-                    <div class="producto-imagen">
-                        <img src="img/producto-hierbas.webp" alt="Hierbas Aromáticas" loading="lazy" width="449" height="800">
-                        <div class="producto-overlay">
-                            <p>Albahaca, cilantro, perejil y menta. Cosechadas frescas para alta cocina.</p>
-                            <a href="#pedidos" class="producto-link">Hacer pedido &#8594;</a>
-                        </div>
-                    </div>
-                    <div class="producto-info">
-                        <span class="producto-etiqueta">Orgánico</span>
-                        <h3>Hierbas Aromáticas</h3>
-                    </div>
-                </div>
-                <div class="producto-card animate-on-scroll">
-                    <div class="producto-imagen">
-                        <img src="img/producto-hortalizas.webp" alt="Hortalizas Frescas" loading="lazy" width="800" height="533">
-                        <div class="producto-overlay">
-                            <p>Tomates, pepinos, pimientos y más. Cultivados con buenas prácticas agrícolas.</p>
-                            <a href="#pedidos" class="producto-link">Hacer pedido &#8594;</a>
-                        </div>
-                    </div>
-                    <div class="producto-info">
-                        <span class="producto-etiqueta">Fresco</span>
-                        <h3>Hortalizas del Campo</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- GALERÍA -->
-    <section id="galeria" class="seccion">
-        <div class="contenedor">
-            <div class="seccion-header">
-                <span class="seccion-etiqueta">Nuestra Galería</span>
-                <h2>Imágenes de la Hacienda</h2>
-            </div>
-            <div class="galeria-grid">
-                <div class="galeria-item galeria-grande">
-                    <img src="img/galeria-1.webp" alt="Lechuga fresca" loading="lazy" width="600" height="400">
-                    <div class="galeria-overlay"><span>Lechuga Fresca</span></div>
-                </div>
-                <div class="galeria-item">
-                    <img src="img/galeria-2.webp" alt="Vista de la finca" loading="lazy" width="533" height="400">
-                    <div class="galeria-overlay"><span>Vista de la Finca</span></div>
-                </div>
-                <div class="galeria-item">
-                    <img src="img/galeria-3.webp" alt="Plántula en mano" loading="lazy" width="338" height="600">
-                    <div class="galeria-overlay"><span>Del Semillero</span></div>
-                </div>
-                <div class="galeria-item">
-                    <img src="img/galeria-4.webp" alt="Invernadero" loading="lazy" width="600" height="800">
-                    <div class="galeria-overlay"><span>Invernadero</span></div>
-                </div>
-                <div class="galeria-item">
-                    <img src="img/galeria-5.webp" alt="Cultivos entre pinos" loading="lazy" width="533" height="400">
-                    <div class="galeria-overlay"><span>Entre Pinos</span></div>
-                </div>
-                <div class="galeria-item galeria-ancha">
-                    <img src="img/galeria-6.webp" alt="Invernadero de hierbas" loading="lazy" width="800" height="600">
-                    <div class="galeria-overlay"><span>Invernadero de Hierbas</span></div>
-                </div>
-                <div class="galeria-item">
-                    <img src="img/galeria-7.webp" alt="Equipo de trabajo" loading="lazy" width="400" height="600">
-                    <div class="galeria-overlay"><span>Nuestro Equipo</span></div>
-                </div>
-                <div class="galeria-item">
-                    <img src="img/galeria-8.webp" alt="Vida silvestre" loading="lazy" width="600" height="400">
-                    <div class="galeria-overlay"><span>Vida Silvestre</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- LIGHTBOX -->
-    <div class="lightbox" id="lightbox">
-        <button class="lightbox-cerrar" id="lightboxCerrar">&times;</button>
-        <img src="data:," alt="Foto ampliada de la galería" class="lightbox-img" id="lightboxImg">
-        <p class="lightbox-caption" id="lightboxCaption"></p>
-    </div>
-
-    <!-- TURISMO -->
-    <section id="turismo" class="seccion seccion-crema">
-        <div class="contenedor">
-            <div class="seccion-header">
-                <span class="seccion-etiqueta">Experiencias Únicas</span>
-                <h2>Turismo y Experiencias</h2>
-            </div>
-            <div class="turismo-layout">
-                <div class="turismo-imagen animate-on-scroll">
-                    <img src="img/turismo.webp" alt="Turismo en Hacienda El Paraíso" loading="lazy" width="800" height="390">
-                </div>
-                <div class="turismo-contenido">
-                    <div class="turismo-item animate-on-scroll">
-                        <h4>Tours Guiados</h4>
-                        <p>Recorridos especializados por nuestros sistemas de cultivo hidropónico y tradicional con expertos agrícolas.</p>
-                    </div>
-                    <div class="turismo-item animate-on-scroll">
-                        <h4>Degustaciones</h4>
-                        <p>Prueba nuestros productos recién cosechados. Una experiencia gastronómica directa del campo a tu paladar.</p>
-                    </div>
-                    <div class="turismo-item animate-on-scroll">
-                        <h4>Talleres Educativos</h4>
-                        <p>Técnicas de cultivo sostenible, clases de cocina y agricultura moderna para grupos escolares y universitarios.</p>
-                    </div>
-                    <div class="turismo-item animate-on-scroll">
-                        <h4>Retiros Rurales</h4>
-                        <p>Desconéctate de la ciudad. Recibimos pastores, misioneros y viajeros que quieran conocer Honduras desde adentro.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- REFUGIO PASTORAL (resumen) -->
-    <section class="seccion seccion-verde">
-        <div class="contenedor">
-            <div class="refugio-cta">
-                <span class="seccion-etiqueta">Refugio Pastoral</span>
-                <h2>Un Lugar de Restauración para Quienes Sirven</h2>
-                <p>Hacienda El Paraíso abre sus puertas a pastores, líderes y sus familias que necesitan un espacio de descanso, sanidad y restauración integral. En medio de las montañas de Valle de Ángeles, ofrecemos un programa que cuida el cuerpo, la mente, el matrimonio y el espíritu.</p>
-                <div class="hero-botones" style="margin-top:35px;">
-                    <a href="refugio-pastoral.html" class="boton-principal">Conoce Más sobre el Refugio</a>
-                    <a href="https://wa.me/50497655779?text=Hola%20Nicol%C3%A1s%2C%20me%20interesa%20el%20Refugio%20Pastoral" class="boton-secundario" target="_blank">Escríbenos por WhatsApp</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NOTICIAS -->
-    <section id="blog" class="seccion">
-        <div class="contenedor">
-            <div class="seccion-header">
-                <span class="seccion-etiqueta">Noticias y Artículos</span>
-                <h2>Desde el Campo</h2>
-            </div>
-            <div class="blog-grid">
-                <article class="blog-card animate-on-scroll">
-                    <div class="blog-imagen">
-                        <img src="img/invernadero-panorama.webp" alt="Hidroponía en Honduras" loading="lazy" width="640" height="480">
-                        <span class="blog-fecha">08 Abr 2026</span>
-                    </div>
-                    <div class="blog-contenido">
-                        <span class="blog-categoria">Sostenibilidad</span>
-                        <h3>Hidroponía: El Futuro de la Agricultura en Honduras</h3>
-                        <p>Descubre cómo los sistemas hidropónicos están revolucionando la producción agrícola y por qué apostamos por esta tecnología.</p>
-                    </div>
-                </article>
-                <article class="blog-card animate-on-scroll">
-                    <div class="blog-imagen">
-                        <img src="img/lechuga-roja.webp" alt="Recetas con lechugas" loading="lazy" width="640" height="1133">
-                        <span class="blog-fecha">25 Mar 2026</span>
-                    </div>
-                    <div class="blog-contenido">
-                        <span class="blog-categoria">Recetas</span>
-                        <h3>5 Recetas Fáciles con Nuestras Lechugas Frescas</h3>
-                        <p>Desde ensaladas gourmet hasta wraps saludables. Ideas prácticas para disfrutar nuestros productos en casa.</p>
-                    </div>
-                </article>
-                <article class="blog-card animate-on-scroll">
-                    <div class="blog-imagen">
-                        <img src="img/jardin.webp" alt="Comunidad Valle de Ángeles" loading="lazy" width="640" height="362">
-                        <span class="blog-fecha">10 Mar 2026</span>
-                    </div>
-                    <div class="blog-contenido">
-                        <span class="blog-categoria">Comunidad</span>
-                        <h3>Generando Empleo Rural en Valle de Ángeles</h3>
-                        <p>Cómo Hacienda El Paraíso contribuye al desarrollo económico de nuestra comunidad y crea oportunidades para familias locales.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- PEDIDOS -->
-    <section id="pedidos" class="seccion seccion-verde">
-        <div class="contenedor">
-            <div class="seccion-header">
-                <span class="seccion-etiqueta">Haz Tu Pedido</span>
-                <h2>Del Campo a Tu Mesa</h2>
-                <p class="seccion-descripcion">Selecciona tus productos y recíbelos frescos. Entregas en Tegucigalpa y Valle de Ángeles.</p>
-            </div>
-            <div class="pedidos-grid">
-                <div class="pedido-card animate-on-scroll">
-                    <div class="pedido-icono">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    </div>
-                    <h3>Pedido Semanal</h3>
-                    <p class="pedido-descripcion">Canasta semanal con lo mejor de nuestra cosecha, directo a tu hogar.</p>
-                    <ul class="pedido-lista">
-                        <li>3 lechugas variadas (Mix verde, roja, romana)</li>
-                        <li>Hierbas aromáticas surtidas</li>
-                        <li>2 kg de hortalizas de temporada</li>
-                        <li>Entrega a domicilio</li>
-                    </ul>
-                    <div class="pedido-precio">Desde <strong>L. 350</strong>/semana</div>
-                    <a href="https://wa.me/50497655779?text=Hola!%20Me%20interesa%20el%20pedido%20semanal%20de%20Hacienda%20El%20Para%C3%ADso" class="boton-principal boton-pedido" target="_blank">Pedir por WhatsApp</a>
-                </div>
-                <div class="pedido-card pedido-destacado animate-on-scroll">
-                    <div class="pedido-popular">Más Popular</div>
-                    <div class="pedido-icono">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <h3>Pedido Premium</h3>
-                    <p class="pedido-descripcion">Selección premium con los mejores productos, ideal para restaurantes y familias.</p>
-                    <ul class="pedido-lista">
-                        <li>5 lechugas premium seleccionadas</li>
-                        <li>Pack completo de hierbas frescas</li>
-                        <li>5 kg de hortalizas selectas</li>
-                        <li>Entrega prioritaria</li>
-                    </ul>
-                    <div class="pedido-precio">Desde <strong>L. 750</strong>/semana</div>
-                    <a href="https://wa.me/50497655779?text=Hola!%20Me%20interesa%20el%20pedido%20premium%20de%20Hacienda%20El%20Para%C3%ADso" class="boton-principal boton-pedido" target="_blank">Pedir por WhatsApp</a>
-                </div>
-                <div class="pedido-card animate-on-scroll">
-                    <div class="pedido-icono">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-                    </div>
-                    <h3>Pedido Empresarial</h3>
-                    <p class="pedido-descripcion">Para restaurantes, hoteles y empresas. Volúmenes personalizados con precios especiales.</p>
-                    <ul class="pedido-lista">
-                        <li>Volúmenes personalizados</li>
-                        <li>Precios mayoristas</li>
-                        <li>Entregas programadas (martes y viernes)</li>
-                        <li>Facturación fiscal</li>
-                    </ul>
-                    <div class="pedido-precio">Cotización personalizada</div>
-                    <a href="https://wa.me/50497655779?text=Hola!%20Me%20interesa%20un%20pedido%20empresarial%20de%20Hacienda%20El%20Para%C3%ADso" class="boton-principal boton-pedido" target="_blank">Solicitar Cotización</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="seccion seccion-clara">
-        <div class="contenedor">
-            <div class="seccion-header">
-                <span class="seccion-etiqueta">Contacto</span>
-                <h2>Hablemos</h2>
-            </div>
-            <div class="contacto-grid">
-                <form class="contacto-form" id="contactoForm">
-                    <p class="form-nota">Serás redirigido a WhatsApp para enviar tu mensaje.</p>
-                    <div class="form-grupo">
-                        <input type="text" id="nombre" required placeholder=" ">
-                        <label for="nombre">Nombre completo</label>
-                    </div>
-                    <div class="form-grupo">
-                        <input type="email" id="email" required placeholder=" ">
-                        <label for="email">Correo electrónico</label>
-                    </div>
-                    <div class="form-grupo">
-                        <select id="asunto" required>
-                            <option value="" disabled selected>Selecciona un asunto</option>
-                            <option value="Comprar productos">Comprar productos</option>
-                            <option value="Visitar la hacienda">Visitar la hacienda</option>
-                            <option value="Pedido empresarial">Pedido empresarial</option>
-                            <option value="Otro">Otro</option>
-                        </select>
-                    </div>
-                    <div class="form-grupo">
-                        <textarea id="mensaje" rows="5" required placeholder=" "></textarea>
-                        <label for="mensaje">Tu mensaje</label>
-                    </div>
-                    <button type="submit" class="boton-principal boton-enviar">Enviar por WhatsApp</button>
-                </form>
-                <div class="contacto-info">
-                    <div class="contacto-item">
-                        <div class="contacto-icono">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        </div>
-                        <div>
-                            <h4>Ubicación</h4>
-                            <p>Valle de Ángeles, Francisco Morazán, Honduras</p>
-                        </div>
-                    </div>
-                    <div class="contacto-item">
-                        <div class="contacto-icono">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-                        </div>
-                        <div>
-                            <h4>Teléfono</h4>
-                            <p>+504 9765-5779</p>
-                        </div>
-                    </div>
-                    <div class="contacto-item">
-                        <div class="contacto-icono">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        </div>
-                        <div>
-                            <h4>Correo</h4>
-                            <p>info@haciendaelparaiso.org</p>
-                        </div>
-                    </div>
-                    <div class="contacto-item">
-                        <div class="contacto-icono">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        </div>
-                        <div>
-                            <h4>Horarios</h4>
-                            <p>Tours: Lun–Vie 8:00–17:00</p>
-                            <p>Mayoreo: Lun–Vie 7:00–18:00</p>
-                            <p>Fines de semana: Solo con cita</p>
-                        </div>
-                    </div>
-                    <div class="contacto-mapa">
-                        <iframe src="https://maps.google.com/maps?q=14.10456,-87.01338&amp;z=16&amp;t=k&amp;output=embed" width="100%" height="220" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    </main>
-
-    <footer class="footer">
-        <div class="contenedor">
-            <div class="footer-grid">
-                <div class="footer-marca">
-                    <img src="img/logo-footer.webp" alt="Hacienda El Paraíso" class="footer-logo" width="160" height="180" loading="lazy">
-                    <p>Agricultura con propósito, desde Honduras para el mundo.</p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/haciendaelparaisohn/" aria-label="Instagram" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
-                        <a href="https://www.tiktok.com/@haciendaelparaisohn" aria-label="TikTok" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 005.58 2.18v-3.26z"/></svg></a>
-                        <a href="https://wa.me/50497655779" aria-label="WhatsApp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-                    </div>
-                </div>
-                <div class="footer-nav">
-                    <h4>Navegación</h4>
-                    <ul>
-                        <li><a href="#historia">Historia</a></li>
-                        <li><a href="#productos">Productos</a></li>
-                        <li><a href="#galeria">Galería</a></li>
-                        <li><a href="#turismo">Turismo</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-legal">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="privacidad.html">Política de Privacidad</a></li>
-                        <li><a href="terminos.html">Términos y Condiciones</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Hacienda El Paraíso &middot; Honduras &middot; Todos los derechos reservados</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- WHATSAPP FLOTANTE -->
-    <a href="https://wa.me/50497655779" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
-
-    <script src="script.js"></script>
-</body>
-</html>
+  <section class="experience-banner"><img src="img/torno-uiB7cNomqh4.webp" alt="Cañón El Torno, a pocos minutos de la hacienda" loading="lazy"><div><p class="eyebrow light">A 500 METROS DE LA HACIENDA</p><h2>Baja al Cañón El Torno.<br><em>Vuelve a comer.</em></h2><p>Cascada, pozas y rapel en el cañón vecino. Sal desde la hacienda y regresa a una mesa con lo que sale de la huerta.</p><a class="btn" href="el-torno.html">Conoce El Torno <span>↗</span></a></div></section>
+  <section class="section roots"><div><p class="eyebrow">DESDE EL AIRE</p><h2>Así se ve<br><em>la hacienda.</em></h2><p>La casa de teja, el jardín de la fuente, los invernaderos y los cultivos entre pinos, fotografiados con dron.</p><a href="https://www.google.com/maps?q=14.10456,-87.01338" class="text-link" target="_blank" rel="noopener">Abrir en Google Maps ↗</a></div><a class="root-photo" href="https://www.google.com/maps?q=14.10456,-87.01338" target="_blank" rel="noopener"><img src="img/aerea-dron.webp" alt="Vista aérea de Hacienda El Paraíso tomada con dron" loading="lazy" width="1400" height="788"><span>Ver la ubicación exacta ↗</span></a></section>
+</section>
+</main>
+<footer><div class="footer-main"><div><a class="brand" href="./"><img src="img/emblema.webp" alt="" width="50" height="50"><span>HACIENDA <strong>EL PARAÍSO</strong></span></a><p>Tierra que alimenta.<br>Naturaleza que conecta.</p></div><div><h4>Nos encontramos aquí</h4><p>Valle de Ángeles<br>Francisco Morazán, Honduras</p><a href="https://www.google.com/maps?q=14.10456,-87.01338" target="_blank" rel="noopener">Buscar en el mapa ↗</a></div><div><h4>Conversemos</h4><a href="https://wa.me/50497655779" target="_blank" rel="noopener">+504 9765-5779 ↗</a><p>Visitas con coordinación previa.</p></div><div><h4>Síguenos</h4><a href="https://www.instagram.com/haciendaelparaisohn/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.tiktok.com/@haciendaelparaisohn" target="_blank" rel="noopener">TikTok ↗</a><a href="refugio-pastoral.html">Refugio pastoral</a></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Hacienda El Paraíso</span><span>Hecho para volver a lo esencial.</span><a href="privacidad.html">Privacidad</a><a href="terminos.html">Términos</a></div></footer>
+<button class="floating-plan" data-plan="Visita a la hacienda"><span>✳</span> Tu próxima escapada <span>↗</span></button>
+<div class="toast" role="status" aria-live="polite" id="toast"></div>
+<dialog id="cart-dialog" class="drawer" aria-label="Tu canasta"><div class="dialog-head"><div><p class="eyebrow">DEL CAMPO A TU MESA</p><h2>Tu <em>canasta.</em></h2></div><button class="close" data-close aria-label="Cerrar canasta">×</button></div><div id="cart-items"></div><form id="cart-form"><label>Tu nombre o negocio<input name="name" autocomplete="name" required placeholder="¿Para quién es la cosecha?" maxlength="100"></label><label>Entrega<select name="delivery"><option>Consultar entrega en Tegucigalpa</option><option>Consultar entrega en Valle de Ángeles</option><option>Consultar retiro en la hacienda</option></select></label><label>¿Algo más que debamos saber?<textarea name="notes" rows="2" placeholder="Frecuencia, cantidades especiales…" maxlength="1000"></textarea></label><p class="form-note">Cotizaremos los productos y la entrega contigo. No se realiza ningún cobro ni se confirma un pedido aquí.</p><button class="btn dark full" id="cart-submit" type="submit">Consultar mi canasta por WhatsApp ↗</button></form></dialog>
+<dialog id="planner-dialog" class="planner" aria-label="Planea tu visita"><button class="close" data-close aria-label="Cerrar planificador">×</button><div class="planner-visual"><img src="img/hero.webp" alt="Paisaje de la hacienda"><div><p class="eyebrow light">TU MOMENTO EN EL PARAÍSO</p><h2>Empieza con<br><em>una idea.</em></h2><p>Nosotros te ayudamos a darle forma.</p></div></div><div class="planner-body"><p class="eyebrow">PLANEA TU VISITA</p><h2>¿Cómo quieres <em>vivirla?</em></h2><form id="planner-form"><label>Me interesa<select name="experience" id="plan-experience"><option>Visita a la hacienda</option><option>Recorrido por los cultivos</option><option>Descanso en la naturaleza</option><option>Refugio pastoral</option><option>Hospedaje</option><option>Boda o celebración</option></select></label><div class="form-row"><label>Fecha que tienes en mente<input type="date" name="date" required></label><label>Personas<input type="number" name="people" min="1" max="500" value="2" required></label></div><label>Tu nombre<input name="name" required autocomplete="name" placeholder="¿Cómo te llamas?" maxlength="100"></label><div class="plan-suggestion" id="plan-suggestion"></div><label>Cuéntanos tu idea<textarea name="notes" rows="2" placeholder="Niños, ocasión especial, necesidades de acceso…" maxlength="1000"></textarea></label><p class="form-note">Prepararemos una consulta. La fecha, los servicios y la tarifa se confirman directamente con el equipo.</p><button type="submit" class="btn dark full">Consultar mi plan por WhatsApp ↗</button></form></div></dialog>
+<dialog id="gallery-dialog" class="lightbox" aria-label="Galería de la hacienda"><button class="close" data-close aria-label="Cerrar galería">×</button><img id="gallery-image" src="img/hero.webp" alt=""><div class="gallery-controls"><button data-gallery-step="-1" aria-label="Foto anterior">←</button><span id="gallery-caption"></span><button data-gallery-step="1" aria-label="Foto siguiente">→</button></div></dialog>
+<dialog id="privacy-dialog" class="privacy" aria-label="Privacidad"><button class="close" data-close aria-label="Cerrar privacidad">×</button><p class="eyebrow">TU INFORMACIÓN</p><h2>Privacidad</h2><p>Este sitio guarda únicamente los productos de tu canasta en este navegador. Los datos de los formularios se usan para preparar un mensaje que tú decides enviar mediante WhatsApp.</p><p>No hay pagos ni reservas automáticas. Al abrir WhatsApp, se aplican las condiciones y la política de privacidad de ese servicio.</p><button class="btn dark" data-action="clear">Borrar mi canasta guardada</button></dialog>
+</body></html>
