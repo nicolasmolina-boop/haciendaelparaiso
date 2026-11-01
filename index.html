@@ -17,7 +17,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script><script src="scene-loader.js" defer></script>
   <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -69,11 +69,27 @@
   <div class="hero">
     <img class="hero-img" src="img/hero.webp" width="1200" height="900" alt="Cultivos verdes entre pinos y montañas de Hacienda El Paraíso" fetchpriority="high">
     <div class="hero-shade"></div>
-    <div class="hero-content"><p class="eyebrow light"><span class="dot"></span> VALLE DE ÁNGELES · HONDURAS</p><h1>La naturaleza<br>se vive.<br><em>Y se saborea.</em></h1><p class="hero-copy">De nuestras manos a tu mesa.<br>De la montaña a tus mejores recuerdos.</p><div class="hero-buttons"><a class="btn" href="experiencias.html">Descubre tu próxima escapada <span>↗</span></a><a class="text-link light" href="cosecha.html">Explora la cosecha <span>→</span></a></div></div>
+    <div class="hero-content"><p class="eyebrow light"><span class="dot"></span> VALLE DE ÁNGELES · HONDURAS</p><h1>La naturaleza<br>se vive.<br><em>Y se saborea.</em></h1><p class="hero-copy">De nuestras manos a tu mesa.<br>De la montaña a tus mejores recuerdos.</p><div class="hero-buttons"><a class="btn" href="#explora-3d">Explora la hacienda en 3D <span>↗</span></a><a class="text-link light" href="cosecha.html">Explora la cosecha <span>→</span></a></div></div>
     <button class="photo-peek" data-gallery="1"><img src="img/historia.webp" alt="Jardín de la hacienda"><span>UN VISTAZO AL PARAÍSO<br><strong>Entra. Respira. Descubre. ↗</strong></span></button>
     <div class="hero-bottom"><span>TIERRA QUE ALIMENTA. NATURALEZA QUE CONECTA.</span><a href="#dos-caminos">Sigue explorando ↓</a></div>
   </div>
   <div class="values-strip"><span>✳ Cultivado en nuestra hacienda</span><span>↟ Entre pinos y montañas</span><span>☀ Energía del sol</span><span>♡ Hecho en Honduras</span></div>
+  <section class="world-section" id="explora-3d" aria-labelledby="world-title">
+    <div class="world-heading"><div><p class="eyebrow light">ENTRA EN OTRA DIMENSIÓN</p><h2 id="world-title">Un pequeño mundo.<br><em>Muchas formas de vivirlo.</em></h2></div><p>Gira la escena, acércate y elige un lugar.<br>Tu próxima visita empieza aquí.</p></div>
+    <div class="world-shell">
+      <div class="world-view" id="world-view">
+        <div class="world-badge"><span class="dot"></span> EXPLORADOR 3D</div>
+        <button class="world-light" id="world-light" aria-pressed="false">☀ Luz de día</button>
+        <div id="world-canvas" tabindex="0" role="group" aria-label="Escena 3D conceptual de la hacienda. Usa las flechas para girar y los botones para acercarte."></div>
+        <div id="world-loading" class="world-loading"><span>✳</span><p>Preparando tu ventana al Paraíso…</p></div>
+        <div id="world-fallback" class="world-fallback" hidden><img src="img/historia.webp" alt="Jardín real de la hacienda"><p>Explora los lugares con los botones de abajo. La vista 3D no está disponible en este navegador.</p></div>
+        <div id="world-hotspots" class="world-hotspots"></div>
+        <div class="world-controls"><span>Arrastra para girar</span><div><button data-world-control="left" aria-label="Girar a la izquierda">↶</button><button data-world-control="right" aria-label="Girar a la derecha">↷</button><button data-world-control="in" aria-label="Acercar escena">+</button><button data-world-control="out" aria-label="Alejar escena">−</button><button data-world-control="reset" aria-label="Restablecer vista">⌂</button></div></div>
+      </div>
+      <aside class="world-story" aria-live="polite"><div class="world-story-photo"><img id="world-photo" src="img/hero.webp" alt="Cultivos entre los pinos de la hacienda"><span>FOTOGRAFÍA REAL</span></div><div class="world-story-body"><p class="eyebrow" id="world-category">BIENVENIDO AL PARAÍSO</p><h3 id="world-name">Todo empieza<br>con la naturaleza.</h3><p id="world-description">Cultivos, jardines y espacios para compartir. Descubre lo que hace especial a la hacienda.</p><a class="text-link" id="world-link" href="experiencias.html">Conoce las experiencias ↗</a></div></aside>
+    </div>
+    <div class="world-bottom"><div class="world-places" role="group" aria-label="Lugares de la escena"><button data-world-place="cultivos" aria-pressed="false">01 <span>Los cultivos</span></button><button data-world-place="jardin" aria-pressed="false">02 <span>El jardín</span></button><button data-world-place="terraza" aria-pressed="false">03 <span>La terraza</span></button><button data-world-place="bosque" aria-pressed="false">04 <span>Entre pinos</span></button></div><p>Escena artística conceptual.<br>No representa la distribución ni las medidas reales.</p></div>
+  </section>
   <section class="section intro" id="dos-caminos"><div><p class="eyebrow">UN LUGAR. MUCHAS FORMAS DE DISFRUTARLO.</p><h2>Un poco de Paraíso.<br><em>A tu manera.</em></h2></div><p>Somos una hacienda que cultiva alimentos y momentos. Ven por lo fresco, quédate por la calma y vuelve por todo lo que aquí se siente.</p></section>
   <div class="path-grid section-pad">
     <a class="path-card" href="cosecha.html"><img src="img/producto-hierbas.webp" alt="Cosecha fresca en el invernadero" loading="lazy"><div><span class="eyebrow light">01 / SABOREA</span><h3>Lo bueno empieza<br>en la tierra.</h3><p>Hierbas, hojas y frescura para tu cocina.</p><span class="card-link">Conoce nuestra cosecha <b>↗</b></span></div></a>
