@@ -12,17 +12,19 @@
     <meta property="og:description" content="Producción premium de lechugas hidropónicas, hierbas aromáticas y hortalizas frescas en el corazón de Honduras.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://haciendaelparaiso.org">
-    <meta property="og:image" content="https://haciendaelparaiso.org/img/hero.jpg">
+    <meta property="og:image" content="https://haciendaelparaiso.org/img/og-portada.jpg">
     <meta property="og:locale" content="es_HN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Hacienda El Paraíso — Donde la Tierra Cobra Vida">
     <meta name="twitter:description" content="Producción premium de lechugas hidropónicas, hierbas aromáticas y hortalizas frescas en Honduras.">
-    <meta name="twitter:image" content="https://haciendaelparaiso.org/img/hero.jpg">
+    <meta name="twitter:image" content="https://haciendaelparaiso.org/img/og-portada.jpg">
     <link rel="canonical" href="https://haciendaelparaiso.org">
-    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="img/hero.webp" fetchpriority="high">
     <link rel="stylesheet" href="estilos.css">
 
     <!-- Schema.org - LocalBusiness / Farm para SEO local -->
@@ -36,7 +38,7 @@
         "description": "Producción premium de lechugas hidropónicas, hierbas aromáticas y hortalizas frescas en Valle de Ángeles, Honduras. Tours rurales, turismo agrícola y Refugio Pastoral.",
         "url": "https://haciendaelparaiso.org",
         "logo": "https://haciendaelparaiso.org/img/logo.png",
-        "image": "https://haciendaelparaiso.org/img/hero.jpg",
+        "image": "https://haciendaelparaiso.org/img/og-portada.jpg",
         "telephone": "+50497655779",
         "email": "info@haciendaelparaiso.org",
         "priceRange": "L. 350 - L. 750",
@@ -113,12 +115,10 @@
 <body>
 
     <!-- NAVEGACIÓN -->
-    <nav class="navegacion" id="nav">
+    <nav aria-label="Principal" class="navegacion" id="nav">
         <div class="nav-contenido">
-            <a href="#" class="nav-logo">
-                <img src="img/logo.png" alt="Hacienda El Paraíso">
-            </a>
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+            <a href="./" class="nav-logo" aria-label="Hacienda El Paraíso — inicio"><img src="img/emblema.webp" alt="" width="48" height="48"><span class="nav-marca">Hacienda El Paraíso</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -139,6 +139,8 @@
             </div>
         </div>
     </nav>
+
+    <main id="contenido">
 
     <!-- HERO -->
     <section class="hero" id="hero">
@@ -190,7 +192,7 @@
             </div>
             <div class="historia-grid">
                 <div class="historia-imagen animate-on-scroll">
-                    <img src="img/historia.jpg" alt="Historia de Hacienda El Paraíso" loading="lazy">
+                    <img src="img/historia.webp" alt="Historia de Hacienda El Paraíso" loading="lazy" width="800" height="453">
                 </div>
                 <div class="historia-texto animate-on-scroll">
                     <p>Hacienda El Paraíso es una finca agrícola hondureña dedicada a la producción de hortalizas frescas de alta calidad. Con más de <strong>12 variedades</strong> de productos y sistemas hidropónicos de última generación, nos hemos convertido en un referente de agricultura sostenible en la región.</p>
@@ -231,7 +233,7 @@
             <div class="productos-grid">
                 <div class="producto-card animate-on-scroll">
                     <div class="producto-imagen">
-                        <img src="img/producto-lechugas.jpg" alt="Lechugas Hidropónicas" loading="lazy">
+                        <img src="img/producto-lechugas.webp" alt="Lechugas Hidropónicas" loading="lazy" width="600" height="800">
                         <div class="producto-overlay">
                             <p>Romana, Iceberg, Butterhead y más. Cultivadas en agua pura sin pesticidas.</p>
                             <a href="#pedidos" class="producto-link">Hacer pedido &#8594;</a>
@@ -244,7 +246,7 @@
                 </div>
                 <div class="producto-card animate-on-scroll">
                     <div class="producto-imagen">
-                        <img src="img/producto-hierbas.jpg" alt="Hierbas Aromáticas" loading="lazy">
+                        <img src="img/producto-hierbas.webp" alt="Hierbas Aromáticas" loading="lazy" width="449" height="800">
                         <div class="producto-overlay">
                             <p>Albahaca, cilantro, perejil y menta. Cosechadas frescas para alta cocina.</p>
                             <a href="#pedidos" class="producto-link">Hacer pedido &#8594;</a>
@@ -257,7 +259,7 @@
                 </div>
                 <div class="producto-card animate-on-scroll">
                     <div class="producto-imagen">
-                        <img src="img/producto-hortalizas.jpg" alt="Hortalizas Frescas" loading="lazy">
+                        <img src="img/producto-hortalizas.webp" alt="Hortalizas Frescas" loading="lazy" width="800" height="533">
                         <div class="producto-overlay">
                             <p>Tomates, pepinos, pimientos y más. Cultivados con buenas prácticas agrícolas.</p>
                             <a href="#pedidos" class="producto-link">Hacer pedido &#8594;</a>
@@ -280,36 +282,36 @@
                 <h2>Imágenes de la Hacienda</h2>
             </div>
             <div class="galeria-grid">
-                <div class="galeria-item galeria-grande animate-on-scroll">
-                    <img src="img/galeria-1.jpg" alt="Lechuga fresca" loading="lazy">
+                <div class="galeria-item galeria-grande">
+                    <img src="img/galeria-1.webp" alt="Lechuga fresca" loading="lazy" width="600" height="400">
                     <div class="galeria-overlay"><span>Lechuga Fresca</span></div>
                 </div>
-                <div class="galeria-item animate-on-scroll">
-                    <img src="img/galeria-2.jpg" alt="Vista de la finca" loading="lazy">
+                <div class="galeria-item">
+                    <img src="img/galeria-2.webp" alt="Vista de la finca" loading="lazy" width="533" height="400">
                     <div class="galeria-overlay"><span>Vista de la Finca</span></div>
                 </div>
-                <div class="galeria-item animate-on-scroll">
-                    <img src="img/galeria-3.jpg" alt="Plántula en mano" loading="lazy">
+                <div class="galeria-item">
+                    <img src="img/galeria-3.webp" alt="Plántula en mano" loading="lazy" width="338" height="600">
                     <div class="galeria-overlay"><span>Del Semillero</span></div>
                 </div>
-                <div class="galeria-item animate-on-scroll">
-                    <img src="img/galeria-4.jpg" alt="Invernadero" loading="lazy">
+                <div class="galeria-item">
+                    <img src="img/galeria-4.webp" alt="Invernadero" loading="lazy" width="600" height="800">
                     <div class="galeria-overlay"><span>Invernadero</span></div>
                 </div>
-                <div class="galeria-item animate-on-scroll">
-                    <img src="img/galeria-5.jpg" alt="Cultivos entre pinos" loading="lazy">
+                <div class="galeria-item">
+                    <img src="img/galeria-5.webp" alt="Cultivos entre pinos" loading="lazy" width="533" height="400">
                     <div class="galeria-overlay"><span>Entre Pinos</span></div>
                 </div>
-                <div class="galeria-item galeria-ancha animate-on-scroll">
-                    <img src="img/galeria-6.jpg" alt="Invernadero de hierbas" loading="lazy">
+                <div class="galeria-item galeria-ancha">
+                    <img src="img/galeria-6.webp" alt="Invernadero de hierbas" loading="lazy" width="800" height="600">
                     <div class="galeria-overlay"><span>Invernadero de Hierbas</span></div>
                 </div>
-                <div class="galeria-item animate-on-scroll">
-                    <img src="img/galeria-7.jpg" alt="Equipo de trabajo" loading="lazy">
+                <div class="galeria-item">
+                    <img src="img/galeria-7.webp" alt="Equipo de trabajo" loading="lazy" width="400" height="600">
                     <div class="galeria-overlay"><span>Nuestro Equipo</span></div>
                 </div>
-                <div class="galeria-item animate-on-scroll">
-                    <img src="img/galeria-8.jpg" alt="Vida silvestre" loading="lazy">
+                <div class="galeria-item">
+                    <img src="img/galeria-8.webp" alt="Vida silvestre" loading="lazy" width="600" height="400">
                     <div class="galeria-overlay"><span>Vida Silvestre</span></div>
                 </div>
             </div>
@@ -319,7 +321,7 @@
     <!-- LIGHTBOX -->
     <div class="lightbox" id="lightbox">
         <button class="lightbox-cerrar" id="lightboxCerrar">&times;</button>
-        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+        <img src="data:," alt="Foto ampliada de la galería" class="lightbox-img" id="lightboxImg">
         <p class="lightbox-caption" id="lightboxCaption"></p>
     </div>
 
@@ -332,7 +334,7 @@
             </div>
             <div class="turismo-layout">
                 <div class="turismo-imagen animate-on-scroll">
-                    <img src="img/turismo.jpg" alt="Turismo en Hacienda El Paraíso" loading="lazy">
+                    <img src="img/turismo.webp" alt="Turismo en Hacienda El Paraíso" loading="lazy" width="800" height="390">
                 </div>
                 <div class="turismo-contenido">
                     <div class="turismo-item animate-on-scroll">
@@ -381,7 +383,7 @@
             <div class="blog-grid">
                 <article class="blog-card animate-on-scroll">
                     <div class="blog-imagen">
-                        <img src="img/invernadero-panorama.jpg" alt="Hidroponía en Honduras" loading="lazy">
+                        <img src="img/invernadero-panorama.webp" alt="Hidroponía en Honduras" loading="lazy" width="640" height="480">
                         <span class="blog-fecha">08 Abr 2026</span>
                     </div>
                     <div class="blog-contenido">
@@ -392,7 +394,7 @@
                 </article>
                 <article class="blog-card animate-on-scroll">
                     <div class="blog-imagen">
-                        <img src="img/lechuga-roja.jpg" alt="Recetas con lechugas" loading="lazy">
+                        <img src="img/lechuga-roja.webp" alt="Recetas con lechugas" loading="lazy" width="640" height="1133">
                         <span class="blog-fecha">25 Mar 2026</span>
                     </div>
                     <div class="blog-contenido">
@@ -403,7 +405,7 @@
                 </article>
                 <article class="blog-card animate-on-scroll">
                     <div class="blog-imagen">
-                        <img src="img/jardin.jpg" alt="Comunidad Valle de Ángeles" loading="lazy">
+                        <img src="img/jardin.webp" alt="Comunidad Valle de Ángeles" loading="lazy" width="640" height="362">
                         <span class="blog-fecha">10 Mar 2026</span>
                     </div>
                     <div class="blog-contenido">
@@ -556,11 +558,13 @@
     </section>
 
     <!-- FOOTER -->
+    </main>
+
     <footer class="footer">
         <div class="contenedor">
             <div class="footer-grid">
                 <div class="footer-marca">
-                    <img src="img/logo.png" alt="Hacienda El Paraíso" class="footer-logo">
+                    <img src="img/logo-footer.webp" alt="Hacienda El Paraíso" class="footer-logo" width="160" height="180" loading="lazy">
                     <p>Agricultura con propósito, desde Honduras para el mundo.</p>
                     <div class="social-links">
                         <a href="https://www.instagram.com/haciendaelparaisohn/" aria-label="Instagram" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
