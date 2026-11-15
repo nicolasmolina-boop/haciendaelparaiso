@@ -41,3 +41,5 @@ body.exploring-3d .floating-plan{opacity:0;pointer-events:none}
 .floating-plan{font-size:0;gap:0;padding:0;width:46px;height:46px;justify-content:center}
 .floating-plan>span:first-child{font-size:20px}
 .floating-plan>span:last-child{display:none}}
+.event-hero>img{object-position:30% 70%}
+@media(max-width:760px){.event-hero>img{object-position:38% 70%}}
