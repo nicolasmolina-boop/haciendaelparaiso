@@ -25,3 +25,19 @@ body.exploring-3d .floating-plan{opacity:0;pointer-events:none}
 @media(max-width:1000px){.venue-grid.four,.video-grid{grid-template-columns:1fr 1fr}.footer-main{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.venue-grid.four,.video-grid{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr}}
 .root-photo{display:block}
+
+/* 15-nov-2026: campamento base y ajustes de celular */
+.venue-grid.three{grid-template-columns:repeat(3,1fr)}
+.venue-grid.four .eyebrow{margin-bottom:12px}
+.experience-hero>div{max-width:min(720px,87%)}
+.experience-hero>div>p:not(.eyebrow){margin-top:20px;max-width:520px}
+.banner-link{margin-top:22px}
+@media(max-width:1000px){.venue-grid.three{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.venue-grid.three{grid-template-columns:1fr}
+.experience-hero>div{max-width:none}
+.experience-hero:after{background:linear-gradient(90deg,#142c26eb,#142c268c)}
+.experience-hero h1{font-size:44px}
+.venue-grid.four{grid-template-columns:1fr 1fr;gap:12px}.venue-grid.four article{padding:20px 16px}.venue-grid.four h3{font-size:22px}.venue-grid.four p:not(.eyebrow){font-size:13px;margin:10px 0 0}
+.floating-plan{font-size:0;gap:0;padding:0;width:46px;height:46px;justify-content:center}
+.floating-plan>span:first-child{font-size:20px}
+.floating-plan>span:last-child{display:none}}
